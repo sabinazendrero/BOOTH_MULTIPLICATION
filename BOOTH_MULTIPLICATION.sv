@@ -21,7 +21,7 @@
 
 
 module sabina_mult#(
-    parameter DATA_WIDTH = 8  // CANT DE BITS
+    parameter DATA_WIDTH = 8  // NUMBER OF BITS
 )(
     // ----------- INPUTS & OUTPUTS -----------------------------------
     input logic  [DATA_WIDTH-1:0] m,                // Multiplicant
@@ -54,7 +54,7 @@ module sabina_mult#(
         shift = {acumulator, q_r, q_minus_one};
         
         // // Start of the cycle---------------------
-        for (i = 0; i < DATA_WIDTH; i = i + 1) begin  //For loop that repeats according to the number of bits used in inputs
+        for (i = 0; i < DATA_WIDTH; i = i + 1) begin  //For loop that repeats according to the number of bits
           
             acumulator_plus_m = acumulator + m_r;
             acumulator_minus_m = acumulator - m_r;
