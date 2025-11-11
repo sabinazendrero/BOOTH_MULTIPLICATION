@@ -70,7 +70,7 @@ module sabina_mult#(
             shift = {acumulator, q_r, q_minus_one};
             
         end
-        assign final_result = {acumulator, q_r};          // Concatenation of the final result with sign
+         final_result = {acumulator, q_r};          // Concatenation of the final result with sign
     end
 
     endmodule
