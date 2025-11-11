@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module BOOTH_MULTIPLICATION#(
+module sabina_mult#(
     parameter DATA_WIDTH = 8  // CANT DE BITS
 )(
     // ----------- INPUTS & OUTPUTS -----------------------------------
@@ -70,8 +70,7 @@ module BOOTH_MULTIPLICATION#(
             shift = {acumulator, q_r, q_minus_one};
             
         end
-        
-    end
         assign final_result = {acumulator, q_r};          // Concatenation of the final result with sign
+    end
 
     endmodule
